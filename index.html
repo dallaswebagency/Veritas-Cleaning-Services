@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veritas Cleaning Services | Commercial Cleaning in Calgary</title>
+<meta name="description" content="Family-owned and operated since 2008. Commercial janitorial, restroom sanitization, hard surface floor care, carpet cleaning and green cleaning throughout Calgary.">
+<link rel="icon" href="images/veritas-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Archivo:wght@400;500;600;700&family=Archivo+Narrow:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#EC1F24;
+  --red-deep:#B81F24;
+  --ink:#221e1b;
+  --ink-soft:#4a433d;
+  --paper:#f4ede1;
+  --paper-2:#ebe2d2;
+  --paper-3:#e2d6c1;
+  --grey:#999999;
+  --rule:rgba(34,30,27,.18);
+  --serif:'Newsreader',Georgia,serif;
+  --sans:'Archivo',system-ui,sans-serif;
+  --label:'Archivo Narrow','Archivo',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.35;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .48 0 0 0 0 .40 0 0 0 .22 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1240px,92vw);margin:0 auto}
+.label{font-family:var(--label);text-transform:uppercase;letter-spacing:.18em;font-size:.78rem;font-weight:600}
+.red{color:var(--red)}
+
+/* ---------- top rule ---------- */
+.rulebar{background:var(--ink);color:var(--paper);font-family:var(--label);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase}
+.rulebar .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:9px 0}
+.rulebar span i{font-style:normal;color:var(--red);margin:0 10px}
+.rulebar a:hover{color:#fff}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(244,237,225,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:12px 0}
+.nav .logo img{height:66px;width:auto}
+.nav ul{display:flex;list-style:none;gap:34px;font-family:var(--label);text-transform:uppercase;letter-spacing:.14em;font-size:.84rem;font-weight:600}
+.nav ul a{position:relative;padding:6px 0}
+.nav ul a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--red);transition:right .3s}
+.nav ul a:hover::after,.nav ul a.on::after{right:0}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--label);text-transform:uppercase;letter-spacing:.14em;font-weight:700;font-size:.86rem;padding:15px 24px;border:2px solid var(--ink);background:var(--ink);color:var(--paper);box-shadow:5px 5px 0 var(--red);transition:transform .2s, box-shadow .2s;cursor:pointer}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--red)}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:none}
+.btn.ghost:hover{background:var(--ink);color:var(--paper);transform:none}
+.btn.redb{background:var(--red);border-color:var(--red);color:#fff;box-shadow:5px 5px 0 var(--ink)}
+.btn.redb:hover{box-shadow:7px 7px 0 var(--ink)}
+.burger{display:none;background:none;border:2px solid var(--ink);width:46px;height:42px;cursor:pointer}
+.burger span{display:block;width:20px;height:2px;background:var(--ink);margin:4px auto}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:56px 0 0}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:end}
+.hero .kicker{display:flex;align-items:center;gap:14px;margin-bottom:26px}
+.hero .kicker::before{content:"";width:46px;height:2px;background:var(--red)}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.7rem,6.2vw,5.6rem);line-height:.98;letter-spacing:-.02em}
+.hero h1 em{font-style:italic;color:var(--red);font-weight:400}
+.hero h1 .under{position:relative;white-space:nowrap}
+.hero h1 .under svg{position:absolute;left:-2%;bottom:-.12em;width:104%;height:.3em}
+.hero p.lead{font-size:1.14rem;color:var(--ink-soft);max-width:540px;margin:30px 0 36px}
+.hero .ctas{display:flex;gap:18px;flex-wrap:wrap;align-items:center;padding-bottom:70px}
+.hero .ctas .phone{font-family:var(--serif);font-size:1.5rem;font-style:italic;border-bottom:1px solid var(--rule);padding-bottom:2px}
+.hero .ctas .phone:hover{color:var(--red)}
+.hero-art{position:relative;align-self:stretch;display:flex;align-items:flex-end;justify-content:center}
+.hero-art .janitor{width:min(430px,100%);position:relative;z-index:2;margin-bottom:-8px}
+.hero-art .sun{position:absolute;width:76%;aspect-ratio:1;border-radius:50%;background:var(--paper-3);right:4%;bottom:12%;z-index:1}
+.hero-art .sun::after{content:"";position:absolute;inset:-18px;border-radius:50%;border:1px dashed rgba(34,30,27,.3)}
+.stamp{position:absolute;top:4%;left:2%;width:150px;height:150px;z-index:3}
+.stamp svg{width:100%;height:100%;animation:spin 26s linear infinite}
+.stamp .core{position:absolute;inset:30px;border-radius:50%;background:var(--red);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:var(--label);text-transform:uppercase;letter-spacing:.1em;font-size:.66rem;line-height:1.1;transform:rotate(-8deg)}
+.stamp .core b{font-family:var(--serif);font-size:2rem;letter-spacing:0;font-weight:500}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ---------- estimate slip ---------- */
+.slip{position:relative;z-index:5;background:#fffaf1;border:2px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:30px 34px 34px;margin-top:-4px}
+.slip::before{content:"";position:absolute;left:-2px;right:-2px;top:-14px;height:14px;
+  background:radial-gradient(circle at 10px 14px, var(--paper) 7px, transparent 7.5px) 0 0/20px 14px repeat-x}
+.slip-head{display:flex;justify-content:space-between;align-items:baseline;gap:20px;border-bottom:1px dashed var(--rule);padding-bottom:16px;margin-bottom:22px;flex-wrap:wrap}
+.slip-head h2{font-family:var(--serif);font-weight:500;font-size:1.9rem}
+.slip-head h2 em{color:var(--red)}
+.slip-head .no{font-family:var(--label);letter-spacing:.16em;font-size:.78rem;color:var(--ink-soft);text-transform:uppercase}
+.slip form{display:grid;grid-template-columns:1fr 1fr 1fr 1.2fr auto;gap:16px;align-items:end}
+.field label{display:block;font-family:var(--label);text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;font-weight:600;margin-bottom:6px;color:var(--ink-soft)}
+.field input,.field select,.field textarea{width:100%;font:inherit;font-size:1rem;border:none;border-bottom:2px solid var(--ink);background:transparent;padding:9px 2px;color:var(--ink);border-radius:0;appearance:none}
+.field select{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23EC1F24' stroke-width='2' fill='none'/%3E%3C/svg%3E") right 4px center no-repeat}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--red)}
+.slip .btn{white-space:nowrap}
+.form-note{margin-top:14px;font-size:.88rem;color:var(--ink-soft);display:none}
+
+/* ---------- section heads ---------- */
+section{position:relative}
+.sec{padding:120px 0}
+.sec-head{display:grid;grid-template-columns:200px 1fr;gap:40px;margin-bottom:60px;align-items:start}
+.sec-head .num{font-family:var(--label);text-transform:uppercase;letter-spacing:.18em;font-size:.8rem;border-top:2px solid var(--ink);padding-top:12px}
+.sec-head .num b{color:var(--red)}
+.sec-head h2{font-family:var(--serif);font-weight:500;font-size:clamp(2.2rem,4.4vw,3.8rem);line-height:1.04;letter-spacing:-.015em;max-width:900px}
+.sec-head h2 em{color:var(--red)}
+.sec-head p{margin-top:18px;color:var(--ink-soft);max-width:640px;font-size:1.06rem}
+
+/* ---------- featured services: ledger rows ---------- */
+.feat{border-top:2px solid var(--ink)}
+.row{display:grid;grid-template-columns:90px 1.1fr 1fr 360px;gap:36px;padding:38px 0;border-bottom:1px solid var(--rule);align-items:center;transition:background .3s}
+.row:hover{background:rgba(226,214,193,.35)}
+.row .n{font-family:var(--serif);font-style:italic;font-size:2.6rem;color:var(--red);line-height:1}
+.row .t{display:flex;gap:20px;align-items:flex-start}
+.row .t img{width:54px;height:54px;flex:none;margin-top:4px}
+.row h3{font-family:var(--serif);font-weight:500;font-size:2rem;line-height:1.1;margin-bottom:8px}
+.row .t p{color:var(--ink-soft)}
+.row ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.row li{font-family:var(--label);text-transform:uppercase;letter-spacing:.1em;font-size:.76rem;font-weight:600;border:1.5px solid var(--ink);padding:6px 12px;border-radius:40px}
+.row .ph{overflow:hidden;border:2px solid var(--ink);aspect-ratio:4/3;clip-path:polygon(0 0,100% 0,100% 86%,88% 100%,0 100%)}
+.row .ph img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.row:hover .ph img{transform:scale(1.05)}
+
+/* ---------- full service menu ---------- */
+.menu{margin-top:80px;display:grid;grid-template-columns:320px 1fr;gap:60px}
+.menu aside h3{font-family:var(--serif);font-weight:500;font-size:2.3rem;line-height:1.1;margin:14px 0 16px}
+.menu aside p{color:var(--ink-soft);margin-bottom:26px}
+.menu-list{columns:2;column-gap:56px}
+.menu-list div{break-inside:avoid;padding:14px 0;border-bottom:1px dotted rgba(34,30,27,.35)}
+.menu-list h4{font-family:var(--serif);font-size:1.28rem;font-weight:500;display:flex;align-items:baseline;gap:10px}
+.menu-list h4::before{content:"\2726";color:var(--red);font-size:.8rem}
+.menu-list p{font-size:.92rem;color:var(--ink-soft);padding-left:22px}
+
+/* ---------- janitorial (dark) ---------- */
+.dark{background:var(--ink);color:var(--paper);overflow:hidden}
+.dark .sec-head .num{border-color:var(--paper)}
+.dark .sec-head p{color:rgba(244,237,225,.72)}
+.jan-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:0;border:1px solid rgba(244,237,225,.25)}
+.jan-photo{position:relative;min-height:440px}
+.jan-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.9)}
+.jan-photo .tag{position:absolute;left:24px;bottom:24px;background:var(--red);color:#fff;padding:10px 16px}
+.freq{display:flex;flex-direction:column}
+.freq button{all:unset;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:30px 34px;border-bottom:1px solid rgba(244,237,225,.25);font-family:var(--serif);font-size:2.4rem;font-weight:400;transition:background .3s,color .3s}
+.freq button span{font-family:var(--label);font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;opacity:.6}
+.freq button.on,.freq button:hover{background:var(--red);color:#fff}
+.freq button.on span{opacity:1}
+.freq .out{padding:30px 34px;flex:1;display:flex;flex-direction:column;justify-content:space-between;gap:20px}
+.freq .out p{font-size:1.06rem;color:rgba(244,237,225,.85)}
+.freq .out a{color:var(--paper);border-bottom:1px solid var(--red);align-self:flex-start;font-family:var(--label);letter-spacing:.14em;text-transform:uppercase;font-size:.82rem;padding-bottom:4px}
+.dark .marq{margin-top:90px;border-top:1px solid rgba(244,237,225,.25);border-bottom:1px solid rgba(244,237,225,.25);padding:20px 0;white-space:nowrap;overflow:hidden}
+.marq div{display:inline-block;animation:marq 40s linear infinite;font-family:var(--serif);font-style:italic;font-size:2rem}
+.marq div i{font-style:normal;color:var(--red);margin:0 28px}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* ---------- why ---------- */
+.why-grid{display:grid;grid-template-columns:330px 1fr;gap:70px;align-items:start}
+.why-card{position:sticky;top:120px;background:var(--paper-2);border:2px solid var(--ink);padding:36px 30px 0;text-align:center}
+.why-card .maid{height:330px;margin:0 auto -2px}
+.why-card .cap{font-family:var(--serif);font-style:italic;font-size:1.25rem;margin-bottom:22px}
+.points{counter-reset:p}
+.point{display:grid;grid-template-columns:110px 1fr;gap:26px;padding:34px 0;border-top:1px solid var(--rule)}
+.point:last-child{border-bottom:1px solid var(--rule)}
+.point .r{font-family:var(--serif);font-size:3.4rem;line-height:.9;color:var(--red);font-style:italic}
+.point h3{font-family:var(--serif);font-weight:500;font-size:1.9rem;line-height:1.15;margin-bottom:8px}
+.point p{color:var(--ink-soft);max-width:560px}
+.why-cta{margin-top:40px;display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.why-cta .script{font-family:var(--serif);font-style:italic;font-size:1.7rem}
+
+/* ---------- green ---------- */
+.green{padding:0 0 120px}
+.green-box{display:grid;grid-template-columns:1fr 1fr;border:2px solid var(--ink);background:#fffaf1}
+.green-box .gtxt{padding:60px 56px;display:flex;flex-direction:column;justify-content:center}
+.green-box h2{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,3.6vw,3.1rem);line-height:1.05;margin:16px 0 20px}
+.green-box h2 em{color:var(--red)}
+.green-box p{color:var(--ink-soft);margin-bottom:26px}
+.checks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px 22px;margin-bottom:34px}
+.checks li{display:flex;gap:10px;align-items:center;font-family:var(--label);text-transform:uppercase;letter-spacing:.1em;font-size:.82rem;font-weight:600}
+.checks li::before{content:"";width:18px;height:18px;flex:none;border:2px solid var(--red);border-radius:50%;background:radial-gradient(circle,var(--red) 3px,transparent 4px)}
+.green-box .gimg{position:relative;border-left:2px solid var(--ink);min-height:460px;overflow:hidden}
+.green-box .gimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* ---------- contact / estimate ---------- */
+.contact{background:var(--paper-2);border-top:2px solid var(--ink)}
+.c-grid{display:grid;grid-template-columns:1fr 1fr 1fr;border:2px solid var(--ink);background:#fffaf1}
+.c-item{padding:40px 34px;border-right:2px solid var(--ink);display:flex;flex-direction:column;gap:12px;transition:background .3s}
+.c-item:last-child{border-right:none}
+.c-item:hover{background:var(--paper)}
+.c-item .ic{width:52px;height:52px;border-radius:50%;background:var(--red);display:grid;place-items:center}
+.c-item .ic svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:2}
+.c-item .big{font-family:var(--serif);font-size:1.7rem;line-height:1.2;word-break:break-word}
+.c-item a.big:hover{color:var(--red)}
+.c-item small{color:var(--ink-soft);font-size:.92rem}
+.c-lower{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:40px;border:2px solid var(--ink)}
+.c-lower .mapbox{min-height:420px;border-right:2px solid var(--ink);background:var(--paper-3)}
+.c-lower iframe{width:100%;height:100%;min-height:420px;border:0;filter:grayscale(1) sepia(.25) contrast(1.05)}
+.c-lower form{padding:40px 38px;background:#fffaf1;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.c-lower form .full{grid-column:1/-1}
+.c-lower form h3{font-family:var(--serif);font-weight:500;font-size:2rem;grid-column:1/-1;line-height:1.1}
+.c-lower form h3 em{color:var(--red)}
+.c-lower textarea{min-height:90px;resize:vertical}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:var(--paper);padding:80px 0 0}
+.f-top{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:50px;padding-bottom:60px}
+.f-logo{background:var(--paper);display:inline-block;padding:14px 18px;margin-bottom:20px}
+.f-logo img{height:70px}
+footer h5{font-family:var(--label);text-transform:uppercase;letter-spacing:.18em;font-size:.78rem;color:var(--red);margin-bottom:18px}
+footer ul{list-style:none;display:grid;gap:10px}
+footer a:hover{color:var(--red)}
+footer p,footer li{color:rgba(244,237,225,.78);font-size:.96rem}
+.f-big{font-family:var(--serif);font-style:italic;font-size:clamp(2.2rem,7.6vw,7.4rem);line-height:.9;color:rgba(244,237,225,.08);white-space:nowrap;overflow:hidden;border-top:1px solid rgba(244,237,225,.18);padding-top:20px}
+.f-bot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:22px 0;border-top:1px solid rgba(244,237,225,.18);font-size:.88rem;color:rgba(244,237,225,.65)}
+.f-bot a{color:var(--paper);border-bottom:1px solid var(--red)}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:1100px){
+  .row{grid-template-columns:70px 1fr 300px}
+  .row ul{grid-column:2/3}
+  .row .ph{grid-row:1/3;grid-column:3}
+  .slip form{grid-template-columns:1fr 1fr}
+  .slip form .field:nth-child(4){grid-column:1/-1}
+  .f-top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){
+  .rulebar .hide-m{display:none}
+  .nav ul,.nav .btn{display:none}
+  .burger{display:block}
+  .nav.open ul{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:100%;background:var(--paper);padding:20px 4vw;gap:18px;border-bottom:2px solid var(--ink)}
+  .hero-grid{grid-template-columns:1fr}
+  .hero .ctas{padding-bottom:20px}
+  .hero-art{max-width:420px;margin:0 auto}
+  .stamp{width:120px;height:120px}
+  .stamp .core{inset:24px}
+  .sec{padding:84px 0}
+  .sec-head{grid-template-columns:1fr;gap:16px}
+  .row{grid-template-columns:1fr;gap:18px}
+  .row ul,.row .ph{grid-column:auto;grid-row:auto}
+  .menu{grid-template-columns:1fr;gap:30px}
+  .menu-list{columns:1}
+  .jan-grid{grid-template-columns:1fr}
+  .jan-photo{min-height:280px}
+  .why-grid{grid-template-columns:1fr;gap:40px}
+  .why-card{position:relative;top:0;max-width:340px}
+  .point{grid-template-columns:70px 1fr}
+  .green-box{grid-template-columns:1fr}
+  .green-box .gtxt{padding:40px 28px}
+  .green-box .gimg{border-left:none;border-top:2px solid var(--ink);min-height:280px}
+  .c-grid{grid-template-columns:1fr}
+  .c-item{border-right:none;border-bottom:2px solid var(--ink)}
+  .c-item:last-child{border-bottom:none}
+  .c-lower{grid-template-columns:1fr}
+  .c-lower .mapbox{border-right:none;border-bottom:2px solid var(--ink);min-height:300px}
+  .c-lower iframe{min-height:300px}
+}
+@media (max-width:560px){
+  .rulebar{font-size:.64rem;letter-spacing:.08em}
+  .hero .kicker{font-size:.7rem}
+  .slip{padding:24px 20px;box-shadow:6px 6px 0 var(--ink)}
+  .slip form,.c-lower form{grid-template-columns:1fr}
+  .c-lower form{padding:30px 22px}
+  .checks{grid-template-columns:1fr}
+  .f-top{grid-template-columns:1fr}
+  .freq button{font-size:1.9rem;padding:24px}
+}
+</style>
+</head>
+<body>
+
+<div class="rulebar">
+  <div class="wrap">
+    <span>Family-owned &amp; operated since 2008<i class="hide-m">✦</i><span class="hide-m">Proudly serving Calgary</span></span>
+    <span><a href="tel:4035604939">403-560-4939</a><i class="hide-m">✦</i><a class="hide-m" href="mailto:paul@veritascleaning.com">paul@veritascleaning.com</a></span>
+  </div>
+</div>
+
+<header>
+  <nav class="wrap nav" id="nav">
+    <a href="#" class="logo"><img src="images/veritas-logo.png" alt="Veritas Cleaning Services, Proudly Serving Calgary"></a>
+    <ul>
+      <li><a href="#" class="on">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="https://veritascleaning.com/employment-opportunities/">Employment Opportunities</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <a href="#estimate" class="btn">Request a Quote</a>
+    <button class="burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="rv">
+      <div class="kicker label">Commercial Cleaning <span class="red">·</span> Calgary, Alberta</div>
+      <h1>Providing <em>quality</em> commercial cleaning services <span class="under">throughout Calgary<svg viewBox="0 0 300 20" preserveAspectRatio="none"><path d="M3 14 C 70 4, 150 4, 297 10" stroke="#EC1F24" stroke-width="5" fill="none" stroke-linecap="round"/></svg></span></h1>
+      <p class="lead">Reliable janitorial services, from daily cleaning to one-off deep cleans, delivered by trained staff and backed by a quality control system.</p>
+      <div class="ctas">
+        <a href="#estimate" class="btn redb">Get A Free Estimate</a>
+        <a href="tel:4035604939" class="phone">or call 403-560-4939</a>
+      </div>
+    </div>
+    <div class="hero-art rv">
+      <div class="sun"></div>
+      <div class="stamp">
+        <svg viewBox="0 0 200 200"><defs><path id="c" d="M100,100 m-82,0 a82,82 0 1,1 164,0 a82,82 0 1,1 -164,0"/></defs>
+          <circle cx="100" cy="100" r="98" fill="#f4ede1" stroke="#221e1b" stroke-width="2"/>
+          <text font-family="Archivo Narrow, sans-serif" font-size="17" font-weight="700" letter-spacing="4.2" fill="#221e1b"><textPath href="#c">FAMILY OWNED ✦ FAMILY OPERATED ✦ CALGARY ✦</textPath></text></svg>
+        <div class="core">Since<b>2008</b></div>
+      </div>
+      <img class="janitor" src="images/janitor-illustration.svg" alt="Illustration of a janitor mopping a floor">
+    </div>
+  </div>
+
+  <div class="wrap" id="estimate">
+    <div class="slip rv">
+      <div class="slip-head">
+        <h2>Request a <em>free</em> quote</h2>
+        <span class="no">Estimate slip ✦ We reply by phone or email</span>
+      </div>
+      <form onsubmit="return sendQuote(this)">
+        <div class="field"><label for="q-name">Name</label><input id="q-name" name="name" required></div>
+        <div class="field"><label for="q-phone">Phone</label><input id="q-phone" name="phone" type="tel" required></div>
+        <div class="field"><label for="q-email">Email</label><input id="q-email" name="email" type="email"></div>
+        <div class="field"><label for="q-svc">Service needed</label>
+          <select id="q-svc" name="service">
+            <option>Commercial janitorial</option><option>Restroom sanitization</option><option>Hard surface floor care</option><option>Carpet cleaning</option><option>Green cleaning</option><option>Day porter services</option><option>Deep cleaning</option><option>One-off cleaning</option><option>Construction clean-up</option><option>Other</option>
+          </select></div>
+        <button class="btn" type="submit">Send Request →</button>
+      </form>
+      <p class="form-note">Thanks! Your email app will open with the request addressed to paul@veritascleaning.com.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="num"><b>01</b> / Services</div>
+      <div>
+        <h2>Three services our clients <em>count on</em> most.</h2>
+        <p>Every space is different, so every cleaning plan is built around your building, your schedule and your standards.</p>
+      </div>
+    </div>
+
+    <div class="feat">
+      <article class="row rv">
+        <div class="n">No.1</div>
+        <div class="t"><img src="images/icon-restroom.svg" alt=""><div><h3>Restroom Sanitization</h3><p>Regular cleaning and disinfecting to keep restrooms hygienic and fresh.</p></div></div>
+        <ul><li>Regular cleaning</li><li>Disinfecting</li><li>Mirror cleaning</li><li>Deep cleaning</li></ul>
+        <div class="ph"><img src="images/restroom-sanitization.jpg" alt="Commercial restroom being sanitized"></div>
+      </article>
+      <article class="row rv">
+        <div class="n">No.2</div>
+        <div class="t"><img src="images/icon-floor.svg" alt=""><div><h3>Hard Surface Floor Care</h3><p>Care that protects your flooring and keeps it looking its best.</p></div></div>
+        <ul><li>Stripping</li><li>Waxing</li><li>Regular maintenance</li></ul>
+        <div class="ph"><img src="images/floor-care.jpg" alt="Hard surface floor being stripped and waxed"></div>
+      </article>
+      <article class="row rv">
+        <div class="n">No.3</div>
+        <div class="t"><img src="images/icon-carpet.svg" alt=""><div><h3>Carpet Cleaning</h3><p>Deep cleaning that lifts dirt and refreshes high-traffic carpet.</p></div></div>
+        <ul><li>Deep cleaning</li><li>Vacuuming</li><li>Spot cleaning</li></ul>
+        <div class="ph"><img src="images/carpet-cleaning.jpg" alt="Office carpet being deep cleaned"></div>
+      </article>
+    </div>
+
+    <div class="menu">
+      <aside class="rv">
+        <span class="label red">The full list</span>
+        <h3>Everything else we take care of.</h3>
+        <p>Need something specific? Ask about it when you request your estimate.</p>
+        <a href="https://veritascleaning.com/services/" class="btn ghost">All Services</a>
+      </aside>
+      <div class="menu-list rv">
+        <div><h4>Day Porter Services</h4><p>On-site support to keep your business clean through the day.</p></div>
+        <div><h4>One-off Cleaning</h4><p>A single clean for specific needs, no regular contract.</p></div>
+        <div><h4>Kitchen Sanitization</h4><p>Sinks, microwaves, refrigerators and more.</p></div>
+        <div><h4>Window &amp; Glass Cleaning</h4><p>Interior and exterior windows and glass surfaces.</p></div>
+        <div><h4>Electrostatic Disinfection Spraying</h4><p>Surface disinfection using electrostatic spraying.</p></div>
+        <div><h4>Dust &amp; Dirt Removal</h4><p>Detailed dusting for better cleanliness and air quality.</p></div>
+        <div><h4>High-touch Point Disinfection</h4><p>Frequently touched surfaces, cleaned and disinfected.</p></div>
+        <div><h4>Deep Cleaning</h4><p>Intensive cleaning on a monthly or quarterly schedule.</p></div>
+        <div><h4>Construction Clean-up</h4><p>Post-construction debris and dust removal.</p></div>
+        <div><h4>Parkade Cleaning</h4><p>Cleaning for parking structures.</p></div>
+        <div><h4>Emergency Services</h4><p>Prompt response to urgent cleaning needs.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMERCIAL JANITORIAL -->
+<section class="sec dark">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="num"><b>02</b> / Commercial Janitorial</div>
+      <div>
+        <h2>All types of commercial properties, on <em>your</em> schedule.</h2>
+        <p>Daily, weekly or monthly. Pick the rhythm that fits your building and we handle the rest.</p>
+      </div>
+    </div>
+    <div class="jan-grid rv">
+      <div class="jan-photo">
+        <img src="images/office-janitorial.jpg" alt="Janitorial cleaning in a Calgary commercial office">
+        <span class="tag label">Calgary commercial properties</span>
+      </div>
+      <div class="freq">
+        <button class="on" data-t="Ongoing daily cleaning keeps your workplace consistently clean, so staff and visitors walk into a fresh space every morning.">Daily <span>Every day</span></button>
+        <button data-t="Weekly service covers the essentials on a steady routine that suits smaller offices and lighter traffic.">Weekly <span>Once a week</span></button>
+        <button data-t="Monthly visits handle the bigger tasks, with deep cleaning available on a monthly or quarterly schedule.">Monthly <span>Once a month</span></button>
+        <div class="out">
+          <p id="freq-out">Ongoing daily cleaning keeps your workplace consistently clean, so staff and visitors walk into a fresh space every morning.</p>
+          <a href="#estimate">Get a plan for your building →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="marq"><div>Restroom Sanitization<i>✦</i>Hard Surface Floor Care<i>✦</i>Carpet Cleaning<i>✦</i>Green Cleaning<i>✦</i>Day Porter Services<i>✦</i>Window &amp; Glass<i>✦</i>Restroom Sanitization<i>✦</i>Hard Surface Floor Care<i>✦</i>Carpet Cleaning<i>✦</i>Green Cleaning<i>✦</i>Day Porter Services<i>✦</i>Window &amp; Glass<i>✦</i></div></div>
+</section>
+
+<!-- WHY US -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="num"><b>03</b> / Why Us</div>
+      <div><h2>Why Calgary businesses choose <em>Veritas.</em></h2></div>
+    </div>
+    <div class="why-grid">
+      <div class="why-card rv">
+        <p class="cap">Attention to detail, since 2008.</p>
+        <img class="maid" src="images/maid-illustration.svg" alt="Illustration of a cleaner carrying a bucket">
+      </div>
+      <div>
+        <div class="points">
+          <div class="point rv"><div class="r">I.</div><div><h3>Family-owned &amp; operated</h3><p>A family business since 2008, with a focus on attention to detail in every space we clean.</p></div></div>
+          <div class="point rv"><div class="r">II.</div><div><h3>Customizable solutions</h3><p>Cleaning plans tailored to each client, from daily service to one-off deep cleaning.</p></div></div>
+          <div class="point rv"><div class="r">III.</div><div><h3>Sustainability</h3><p>We use naturally derived, safe products that are better for your people and your building.</p></div></div>
+          <div class="point rv"><div class="r">IV.</div><div><h3>WCB coverage</h3><p>Fully covered, with insured and vetted staff you can trust in your workplace.</p></div></div>
+        </div>
+        <div class="why-cta rv"><span class="script">Ready when you are.</span><a href="#estimate" class="btn redb">Get a free quote!</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GREEN -->
+<section class="green">
+  <div class="wrap">
+    <div class="green-box rv">
+      <div class="gtxt">
+        <span class="label red">04 / Eco-friendly practices</span>
+        <h2>Green cleaning for <em>healthier</em> indoor spaces.</h2>
+        <p>Our green cleaning services use naturally derived, biodegradable products that are safe and effective, helping improve indoor air quality for everyone in your building.</p>
+        <ul class="checks"><li>Naturally derived</li><li>Biodegradable</li><li>Safe &amp; effective</li><li>Better air quality</li></ul>
+        <div><a href="https://veritascleaning.com/services/" class="btn ghost">Learn More</a></div>
+      </div>
+      <div class="gimg"><img src="images/green-cleaning.jpg" alt="Eco-friendly cleaning products in a commercial space"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec contact" id="contact">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="num"><b>05</b> / Contact Us</div>
+      <div>
+        <h2>Three easy ways to get your <em>estimate.</em></h2>
+        <p>Call, email or send the form below. Tell us about your space and we'll put together a quote that fits.</p>
+      </div>
+    </div>
+    <div class="c-grid rv">
+      <div class="c-item">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div>
+        <span class="label">Call</span>
+        <a class="big" href="tel:4035604939">403-560-4939</a>
+        <small>Speak with us directly about your building.</small>
+      </div>
+      <div class="c-item">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></div>
+        <span class="label">Email</span>
+        <a class="big" href="mailto:paul@veritascleaning.com">paul@veritascleaning.com</a>
+        <small>Send details any time.</small>
+      </div>
+      <div class="c-item">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+        <span class="label">Address</span>
+        <span class="big">2525 36th St. NE, Calgary, AB T1Y 6R4</span>
+        <small>Mailing: PO Box 57195</small>
+      </div>
+    </div>
+    <div class="c-lower rv">
+      <div class="mapbox"><iframe title="Veritas Cleaning Services location" loading="lazy" src="https://www.google.com/maps?q=2525+36th+St+NE,+Calgary,+AB+T1Y+6R4&output=embed"></iframe></div>
+      <form onsubmit="return sendQuote(this)">
+        <h3>Request a <em>quote</em></h3>
+        <div class="field"><label for="c-name">Name</label><input id="c-name" name="name" required></div>
+        <div class="field"><label for="c-phone">Phone</label><input id="c-phone" name="phone" type="tel" required></div>
+        <div class="field full"><label for="c-email">Email</label><input id="c-email" name="email" type="email"></div>
+        <div class="field full"><label for="c-msg">Tell us about your space</label><textarea id="c-msg" name="message"></textarea></div>
+        <div class="full"><button class="btn redb" type="submit">Send Request →</button></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <a href="#" class="f-logo"><img src="images/veritas-logo.png" alt="Veritas Cleaning Services"></a>
+        <p>Family-owned and operated since 2008, providing quality commercial cleaning services throughout Calgary.</p>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul><li><a href="#services">Services</a></li><li><a href="https://veritascleaning.com/employment-opportunities/">Employment Opportunities</a></li><li><a href="#contact">Contact Us</a></li></ul>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul><li>Commercial Janitorial</li><li>Restroom Sanitization</li><li>Hard Surface Floor Care</li><li>Carpet Cleaning</li><li>Green Cleaning</li></ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul><li><a href="tel:4035604939">403-560-4939</a></li><li><a href="mailto:paul@veritascleaning.com">paul@veritascleaning.com</a></li><li>2525 36th St. NE, Calgary, AB T1Y 6R4</li><li>PO Box 57195</li></ul>
+      </div>
+    </div>
+    <div class="f-big">Veritas Cleaning Services</div>
+    <div class="f-bot">
+      <span>© 2026 Veritas Cleaning Services</span>
+      <span>Design by <a href="https://cleanningdigital.com/" target="_blank" rel="noopener">Cleaning Digital</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// frequency selector
+document.querySelectorAll('.freq button').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('.freq button').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on');document.getElementById('freq-out').textContent=b.dataset.t;
+  });
+});
+// reveal on scroll
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+// close mobile nav on link
+document.querySelectorAll('.nav ul a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+// quote form -> email
+function sendQuote(f){
+  const d=new FormData(f);let body='';
+  for(const [k,v] of d.entries()){ if(v) body+=k.charAt(0).toUpperCase()+k.slice(1)+': '+v+'\n'; }
+  window.location.href='mailto:paul@veritascleaning.com?subject='+encodeURIComponent('Quote request from website')+'&body='+encodeURIComponent(body);
+  const n=f.parentElement.querySelector('.form-note'); if(n) n.style.display='block';
+  return false;
+}
+</script>
+</body>
+</html>
