@@ -126,6 +126,9 @@ section{position:relative}
 .menu{margin-top:80px;display:grid;grid-template-columns:320px 1fr;gap:60px}
 .menu aside h3{font-family:var(--serif);font-weight:500;font-size:2.3rem;line-height:1.1;margin:14px 0 16px}
 .menu aside p{color:var(--ink-soft);margin-bottom:26px}
+.aside-ph{margin-top:40px;position:relative;border:2px solid var(--ink);aspect-ratio:3/4;overflow:hidden;clip-path:polygon(0 0,100% 0,100% 90%,86% 100%,0 100%)}
+.aside-ph img{width:100%;height:100%;object-fit:cover}
+.aside-ph figcaption{position:absolute;left:0;top:18px;background:var(--red);color:#fff;padding:8px 14px}
 .menu-list{columns:2;column-gap:56px}
 .menu-list div{break-inside:avoid;padding:14px 0;border-bottom:1px dotted rgba(34,30,27,.35)}
 .menu-list h4{font-family:var(--serif);font-size:1.28rem;font-weight:500;display:flex;align-items:baseline;gap:10px}
@@ -242,6 +245,7 @@ footer p,footer li{color:rgba(244,237,225,.78);font-size:.96rem}
   .row ul,.row .ph{grid-column:auto;grid-row:auto}
   .menu{grid-template-columns:1fr;gap:30px}
   .menu-list{columns:1}
+  .aside-ph{max-width:340px}
   .jan-grid{grid-template-columns:1fr}
   .jan-photo{min-height:280px}
   .why-grid{grid-template-columns:1fr;gap:40px}
@@ -375,6 +379,7 @@ footer p,footer li{color:rgba(244,237,225,.78);font-size:.96rem}
         <h3>Everything else we take care of.</h3>
         <p>Need something specific? Ask about it when you request your estimate.</p>
         <a href="https://veritascleaning.com/services/" class="btn ghost">All Services</a>
+        <figure class="aside-ph"><img src="images/day-porter.jpg" alt="Day porter cleaning the glass entrance of a commercial building lobby"><figcaption class="label">Day porter services</figcaption></figure>
       </aside>
       <div class="menu-list rv">
         <div><h4>Day Porter Services</h4><p>On-site support to keep your business clean through the day.</p></div>
